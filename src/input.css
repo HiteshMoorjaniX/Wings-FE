@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sec-3 {
+    background-image: url('assets/bg3.jpg');
+}
+.sec3-img {
+    margin-bottom:-150px;
+}
+.sec-4 {
+    background-image: url('assets/bg4.jpg');
+}
+.sec-6 {
+    background-image: url('assets/bg61.png');
+}
+.plans {
+    background-image: url('assets/bg-shape.png');
+}
+ul.sec2 li:before {
+    content: url('assets/ico1.svg');
+    margin-right: 10px;
+}
+.f-menu:before {
+    content: url('assets/f-icon.svg');
+    margin-right: 10px;
+}
+.f-menu:hover:before {
+    filter: invert(48%) sepia(32%) saturate(4457%) hue-rotate(359deg) brightness(99%) contrast(108%);
+}
+.modal-bg {
+    /* background-image: url('assets/modal-bg.png'); */
+}
+.f:hover {
+    filter: invert(48%) sepia(32%) saturate(4457%) hue-rotate(359deg) brightness(99%) contrast(108%);
+}
+.plan-sec{
+    background-color: #F9F9F9;
+}
+nav .nav-items a.active{
+    @apply text-theme relative lg:flex lg:justify-center
+  }
+  
+footer .nav-items a.active{
+    @apply text-theme
+}
+.sec-4 li:before {
+    content: url(assets/ico2.svg);
+    margin-right: 10px;
+}
+.wt:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(354deg) brightness(103%) contrast(101%);
+}
+
+.tb-bg {
+    background-image: url('assets/image3.jpg');
+    background-size: cover;
+}
+
+.title-bg {
+    background-image: url('assets/h-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+.career-bg {
+    background-image: url('assets/wings-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-btn {
+    font-size: 2.4rem;
+    /* width: 6rem;
+    height: 6rem; */
+    color: #fff;
+   
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+    /* &--icon {
+        animation: gototop 1.2s linear infinite alternate-reverse;
+      } */
+@keyframes gototop {
+    0% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(1rem);
+    }
+  }
+
+@media(min-width: 1024px){
+    nav .nav-items a.active:before{
+      content: "";
+      background: url("assets/title.svg");
+      @apply h-4 w-8 absolute -bottom-3 bg-contain bg-no-repeat brightness-0
+    }
+  }
+  
+
+
+.left-part {
+    min-width: 320px;
+    max-width: 320px;
+}
+.main-part {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+}
+

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+  @apply scroll-smooth
+}
+.App {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+body {
+  @apply overflow-x-hidden
+}
+:focus{
+  @apply outline-none
+}
+
+nav .nav-items a.active{
+  @apply text-theme relative lg:flex lg:justify-center
+}
+
+footer .nav-items a.active{
+  @apply text-theme
+}
+
+.Iconmenu .sideNav{
+  @apply md:w-auto w-0
+}
+.Iconmenu .sideNav a{
+  @apply max-w-62 rounded-none
+}
+
+
+
+.Iconmenu .sideNav a:hover,.Iconmenu .sideNav a:focus{
+  @apply absolute w-auto max-w-none rounded-tr-full rounded-br-full
+}
+
+.Iconmenu .sideNav a:hover span,.Iconmenu .sideNav a:focus span{
+  @apply block
+}
+
+.Iconmenu .sideNav a span{
+  @apply hidden
+}
+
+.Fullmenu .sideNav{
+  @apply pr-8 min-w-260
+}
+
+.sideNav a:hover svg,.sideNav a:focus svg,.sideNav a.active svg{
+  @apply opacity-100
+}
+
+.not {
+  border: 1px solid rgb(156 163 175)!important;
+  @apply bg-gray-400
+}
+
+.selected {  
+  border: 1px solid green!important;
+  @apply bg-green-700 
+}
+
+.booked {
+  border: 1px solid rgb(239 68 68)!important;
+  @apply bg-red-500
+}
+
+.date-active {
+  background-color: #FF6A00!important;
+  @apply bg-theme text-white
+}
+
+.paid {
+  @apply text-green-700 bg-green-200
+}
+
+.unpaid {
+  @apply text-theme bg-orange-100
+}
+
+#f-wings {
+  @apply absolute bottom-0  
+}
+
+#co-wings {
+  position: relative;
+}
+
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+}
+.bottom22 {
+  bottom: 5.5rem;
+}
+.w-st {
+  position:fixed!important;
+  top:0!important;
+}
+.w-st1 {
+  position:fixed!important;
+  left:0!important;
+}
+
+
+@media(min-width: 1024px){
+  nav .nav-items a.active:before{
+    content: "";
+    background: url("assets/title.svg");
+    @apply h-4 w-8 absolute -bottom-3 bg-contain bg-no-repeat brightness-0
+  }
+}
+
+@media(min-width:768px){
+  .sideNav a.active{
+    @apply bg-theme
+  }
+  .Fullview{
+    max-width: calc(100% - 260px) 
+  }
+  
+  .Halfview{
+    max-width: calc(100% - 74px) 
+  }
+
+  .Fullviews{
+    max-width: calc(100% - 390px);
+    /* margin-left:60px; */
+  }
+  .Halfviews{
+    max-width: calc(100% - 64px) 
+  }
+  
+}
+
+@media(max-width:767px){
+  .sideNav a.active{
+    @apply text-theme
+  }
+}
+
+
+.tool-bar {
+  background-color: #000;
+  color: #fff ;
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  padding: 1rem;
+  /* position: absolute; */
+  z-index: 99;
+}
+.sidebar {
+  background-color: #000;
+  /* color: #fff; */
+  height: 100vh;
+  width: 280px;
+  top:0;
+  right:0!important;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.sidebar li {
+  list-style: none;
+  padding:1rem 2 rem;
+  border-bottom:1px solid;
+}
+.backdrop {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.sidebar--open {
+  transform: translateX(0%);
+}
+.backdrop--open {
+  display:block;
+}

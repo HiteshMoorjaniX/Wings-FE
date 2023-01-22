@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 81" width="70" height="81">
+	<title>play-svg</title>
+	<style>
+		.s0 { fill: #ff6a00 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<g id="Group_1612">
+		<g id="Layer">
+			<path id="Rectangle_907-2" class="s0" d="m-1-1h75v75h-75z"/>
+		</g>
+		<path id="Polygon_8" class="s1" d="m43 35.7q0.1 0.1 0.3 0.4 0.1 0.2 0.1 0.4 0 0.2-0.1 0.4-0.2 0.3-0.3 0.4l-12.4 9.5q-0.2 0.1-0.5 0.2-0.3 0-0.5-0.1-0.3-0.2-0.4-0.4-0.2-0.2-0.2-0.5v-19q0-0.3 0.2-0.5 0.1-0.2 0.4-0.4 0.2-0.1 0.5-0.1 0.3 0.1 0.5 0.2z"/>
+	</g>
+</svg>
